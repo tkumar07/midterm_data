@@ -51,7 +51,9 @@ template <class T>
 Node<T> *LinkedList<T>::GetNode(const T& item, 
                       Node<T>* ptrNext)
 {
-
+    Node<T> newLink(item, ptrNext);
+    
+    return newLink;
 }
 
 template <class T>
